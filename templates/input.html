@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brain Tumor Segmentation</title>
+	<style>
+        h1{
+            text-align: center;
+        }
+		body {
+			background-color: black;
+			color: white;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type="file"] {
+			font-size: 16px;
+			padding: 10px;
+			background-color: white;
+			color: black;
+			border-radius: 5px;
+			border: none;
+			box-shadow: none;
+			margin-bottom: 20px;
+		}
+		input[type="submit"] {
+			font-size: 20px;
+			padding: 10px 20px;
+			background-color: white;
+			color: black;
+			border-radius: 5px;
+			border: none;
+			box-shadow: none;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<h1>Brain Tumour Segmentation</h1>
+	<form action="/" method="POST" enctype="multipart/form-data">
+		<input type="file" name="image" accept=".nii">
+		<input type="submit" value="Upload">
+	</form>
+</body>
+</html>

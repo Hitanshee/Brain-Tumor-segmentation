@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Segmentation Result</title>
+	<style>
+		body {
+			background-color: white;
+			color: black;
+		}
+		img {
+			width: 500px;
+			height: 400px;    
+		}
+        h1{
+            text-align: center;
+        }
+		.image-container{
+			text-align: center;
+
+		}
+	</style>
+</head>
+<body>
+	<h1>Brain Tumour Segmentation Result</h1>
+	<div class = image-container></div>
+	<img src="data:image/png;base64,{{ segmented_img }}" alt="Segmented Image">
+    <h2>{{ text_message }}</h2>
+	<h3>Blue resembles enhancing region<br>Green resembles Necrotic region<br>Red resembles Edema region
+	</h3>
+</body>
+</html>
